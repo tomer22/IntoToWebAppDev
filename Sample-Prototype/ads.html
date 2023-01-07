@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Generator!</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Link to my CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="center-align">
+        <h1 >The Ad AId</h1>
+        <div class="section">
+            <div class="section" id="stuffAdd">
+                <h2>What is your product like?</h2>
+                <form>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for="nameInput">Product Name:</label>
+                            <input type="text" name="name" id="nameInput" class="validate invalid" data-length="32"
+                                required="">
+                        </div>
+                        <div class="input-field col s6">
+                            <label>What problem is the product attemtping to solve?</label>
+                            <input type="text" name="name" id="nameInput" class="validate invalid" data-length="32"
+                                required="">
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="nameInput">Extra details?</label>
+                            <input type="text" name="name" id="nameInput" class="validate invalid" data-length="32"
+                                required="">
+                        </div>
+
+                        <div class="input-field col s6">
+                            <label for="nameInput">Marketing points and techniques you want to use?</label>
+                            <input type="text" name="name" id="nameInput" class="validate invalid" data-length="32"
+                                required="">
+                        </div>
+
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit">
+                        <i class="material-icons right">send</i>
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="section center-align" id="stuffList">
+            <h2>Product inventory and details:</h2>
+            <table class="highlight centered">
+                <thead>
+
+                    <tr>
+                        <th>Product</th>
+                        <th>Ad Rating</th>
+                        <th>Time To Read (s)</th>
+                        <th></th>
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>Instacure100</td>
+                        <td>78</td>
+                        <td>32</td>
+                        <td>
+                            <a class="btn-small waves-effect waves-light" href="item.html">
+                                <i class="material-icons right">edit</i>
+                                Info/Edit
+                            </a>
+                            <a class="btn-small waves-effect waves-light red">
+                                <i class="material-icons right">delete</i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>SoundBlock</td>
+                        <td>99</td>
+                        <td>30</td>
+                        <td>
+                            <a class="btn-small waves-effect waves-light" href="item.html">
+                                <i class="material-icons right">edit</i>
+                                Info/Edit
+                            </a>
+                            <a class="btn-small waves-effect waves-light red">
+                                <i class="material-icons right">delete</i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>AlgoFly</td>
+                        <td>86</td>
+                        <td>27</td>
+                        <td>
+                            <a class="btn-small waves-effect waves-light" href="item.html">
+                                <i class="material-icons right">edit</i>
+                                Info/Edit
+                            </a>
+                            <a class="btn-small waves-effect waves-light red">
+                                <i class="material-icons right">delete</i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>EZBag</td>
+                        <td>94</td>
+                        <td>22</td>
+                        <td>
+                            <a class="btn-small waves-effect waves-light" href="item.html">
+                                <i class="material-icons right">edit</i>
+                                Info/Edit
+                            </a>
+                            <a class="btn-small waves-effect waves-light red">
+                                <i class="material-icons right">delete</i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <a class="btn-small waves-effect waves-light" href="index.html">
+                <i class="material-icons left">arrow_back</i>Return to homepage
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
