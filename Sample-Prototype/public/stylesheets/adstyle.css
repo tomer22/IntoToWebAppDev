@@ -1,0 +1,15 @@
+form {
+    border: solid 2px lightgrey;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form:focus-within {
+    border-color: orange;
+}
+
+tr:hover {
+    background-color: #F0F0F0;
+}
+
+/* I don't think I have a need for this file since I don't have embedded css code in any of my HTML files. I also don't have any links to remove since I have to have the materialize links where they are.
