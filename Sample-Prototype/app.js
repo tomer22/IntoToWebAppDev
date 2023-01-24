@@ -16,12 +16,12 @@ app.get( "/", ( req, res ) => {
 } );
 
 // define a route for the stuff inventory page
-app.get( "/stuff", ( req, res ) => {
+app.get( "/ads", ( req, res ) => {
     res.sendFile( __dirname + "/views/ads.html" );
 } );
 
 // define a route for the item detail page
-app.get( "/stuff/item", ( req, res ) => {
+app.get( "/ads/item", ( req, res ) => {
     res.sendFile( __dirname + "/views/item.html" );
 } );
 
