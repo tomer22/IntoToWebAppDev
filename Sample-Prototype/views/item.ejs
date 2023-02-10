@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stuff Inventory</title>
+    <title>Ad Inventory</title>
 
     <!-- Materialize CSS and Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -21,17 +21,17 @@
             <table>
                 <tbody><tr>
                     <th>Product:</th>
-                    <td>SoundBlock</td>
+                    <td><%= product_name %></td>
                 </tr>
                 <tr>
                     <th>Rating:</th>
-                    <td>99</td>
+                    <td><%= ad_rating %></td>
 
                 </tr>
                 <tr>
                     <th>Feedback:</th>
                     <td>
-                        Your ad and product are a killer combination! Your product will be in high demand when it's released to the market I'm sure!
+                        <%= feedback %></td>
                     </td>
                 </tr>
                 <tr>
@@ -60,7 +60,7 @@
             <div class="modal-content">
 
                 <h2>Edit ad or product:</h2>
-                <form>
+                <form method="POST" action="/ads/item/<%=id %>">
                     <div class="row">
                         <div class="input-field col s6">
                             <label for="nameInput">Product Name:</label>
