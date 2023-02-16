@@ -22,12 +22,11 @@
         <div class="section">
             <div class="section" id="stuffAdd">
                 <h2>What is your product like?</h2>
-                <form method="POST" action="/stuff"> 
+                <form method="POST" action="/ads"> 
                     <div class="row">
                         <div class="input-field col s6">
                             <label for="nameInput">Product Name:</label>
-                            <input type="text" name="name" id="nameInput" class="validate invalid" data-length="32"
-                                required="">
+                            <input type="text" name="name" id="nameInput" class="validate invalid" data-length="32">
                         </div>
                         <div class="input-field col s6">
                             <label>What problem is the product attemtping to solve?</label>
@@ -72,17 +71,16 @@
                     <% for (let i = 0; i < inventory.length; i++) { %>
 
                     
-
                     <tr>
                         <td><%= inventory[i].product_name %></td>
                         <td><%= inventory[i].ad_rating %></td>
                         <td>32</td>
                         <td>
-                            <a class="btn-small waves-effect waves-light" href=<%= "/ads/item/" + inventory[i].ad_id %>>
+                            <a class="btn-small waves-effect waves-light" href= "/ads/item/<%= inventory[i].ad_id %>">
                                 <i class="material-icons right">edit</i>
                                 Info/Edit
                             </a>
-                            <a class="btn-small waves-effect waves-light red" href=<%= "/ads/item/" + inventory[i].ad_id + "/delete" %>>
+                            <a class="btn-small waves-effect waves-light red" href="/ads/item/<%= inventory[i].ad_id %>/delete">
                                 <i class="material-icons right">delete</i>
                                 Delete
                             </a>
