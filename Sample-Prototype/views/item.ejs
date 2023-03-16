@@ -60,21 +60,23 @@
             <div class="modal-content">
 
                 <h2>Edit ad or product:</h2>
-                <form method="POST" action="/ads/item/<%=id %>">
+                <form method="POST" action="/ads/item/<%=ad_id %>">
                     <div class="row">
                         <div class="input-field col s6">
-                            <label for="nameInput">Product Name:</label>
                             <input type="text" name="name" id="nameInput" class="validate" data-length="32" required="">
+                            <label for="nameInput">Product Name:</label>
                         </div>
                         <div class="input-field col s6">
+                            <input type="number" name="ad_rating" id="quantityInput" value="1" required="">
                             <label for="quantityInput" class="active">Your ad rating:</label>
-                            <input type="number" name="quantity" id="quantityInput" value="1" required="">
+                        
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
+                            <input type="text" name="feedback" id="descriptionInput" data-length="100">
                             <label for="descriptionInput">Prototype Description:</label>
-                            <input type="text" name="description" id="descriptionInput" data-length="100">
+                        
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -95,7 +97,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!-- initialize Materialize elements -->
-    <script> M.AutoInit();</script>
+    <script src="/material.js"></script>
 
 
 

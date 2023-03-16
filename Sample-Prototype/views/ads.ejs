@@ -17,6 +17,35 @@
 </head>
 
 <body>
+    <!-- Nav bar -->
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="/" class="brand-logo">Ad AId</a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <!-- Main nav, hidden for small screens -->
+                <ul id="desktop-nav" class="right hide-on-med-and-down">
+                    <li><a href="/"><i class="material-icons left">home</i>Home</a></li>
+                    <li><a href="/stuff"><i class="material-icons left">list</i>Inventory</a></li>
+                    <li><a href="/login" class="btn blue">Login</a></li>
+                    <li><a href="/logout" class="btn red">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile nav menu, shown when menu button clicked --> 
+        <ul id="mobile-nav" class="sidenav">
+    <!-- Materialize JavaScript 
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- initialize Materialize elements
+    <script src="/scripts/materializeAutoinit.js"></script>-->
+
+            <li><a href="/"><i class="material-icons left">home</i>Home</a></li>
+            <li><a href="/index"><i class="material-icons left">list</i>Inventory</a></li>
+            <li><a href="/login" class="btn blue">Login</a></li>
+            <li><a href="/logout" class="btn red">Logout</a></li>
+        </ul>
+    </header>
     <div class="center-align">
         <h1 >The Ad AId</h1>
         <div class="section">
@@ -29,19 +58,19 @@
                             <input type="text" name="name" id="nameInput" class="validate invalid" data-length="32">
                         </div>
                         <div class="input-field col s6">
-                            <label>What problem is the product attemtping to solve?</label>
-                            <input type="text" name="name" id="nameInput" class="validate invalid" data-length="32"
+                            <label for="problemInput" > What problem is the product attemtping to solve?</label>
+                            <input type="text" name="problem" id="problemInput" class="validate invalid" data-length="32"
                                 required="">
                         </div>
                         <div class="input-field col s6">
-                            <label for="nameInput">Extra details?</label>
-                            <input type="text" name="name" id="nameInput" class="validate invalid" data-length="32"
+                            <label for="detailInput">Extra details?</label>
+                            <input type="text" name="details" id="detailInput" class="validate invalid" data-length="32"
                                 required="">
                         </div>
 
                         <div class="input-field col s6">
-                            <label for="nameInput">Marketing points and techniques you want to use?</label>
-                            <input type="text" name="name" id="nameInput" class="validate invalid" data-length="32"
+                            <label for="pointsInput">Marketing points and techniques you want to use?</label>
+                            <input type="text" name="points" id="pointsInput" class="validate invalid" data-length="32"
                                 required="">
                         </div>
 
@@ -53,6 +82,7 @@
                 </form>
             </div>
         </div>
+    -->
 
         <div class="section center-align" id="stuffList">
             <h2>Product inventory and details:</h2>
@@ -87,54 +117,6 @@
                         </td>
                     </tr>
                     <% } %>
-
-                    <tr>
-                        <td>SoundBlock</td>
-                        <td>99</td>
-                        <td>30</td>
-                        <td>
-                            <a class="btn-small waves-effect waves-light" href="/ads/item">
-                                <i class="material-icons right">edit</i>
-                                Info/Edit
-                            </a>
-                            <a class="btn-small waves-effect waves-light red">
-                                <i class="material-icons right">delete</i>
-                                Delete
-                            </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>AlgoFly</td>
-                        <td>86</td>
-                        <td>27</td>
-                        <td>
-                            <a class="btn-small waves-effect waves-light" href="/ads/item">
-                                <i class="material-icons right">edit</i>
-                                Info/Edit
-                            </a>
-                            <a class="btn-small waves-effect waves-light red">
-                                <i class="material-icons right">delete</i>
-                                Delete
-                            </a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>EZBag</td>
-                        <td>94</td>
-                        <td>22</td>
-                        <td>
-                            <a class="btn-small waves-effect waves-light" href="/ads/item">
-                                <i class="material-icons right">edit</i>
-                                Info/Edit
-                            </a>
-                            <a class="btn-small waves-effect waves-light red">
-                                <i class="material-icons right">delete</i>
-                                Delete
-                            </a>
-                        </td>
-                    </tr>
                 </tbody>
             </table>
         </div>
@@ -144,6 +126,9 @@
             </a>
         </div>
     </div>
+
+    <script src="/material.js"></script>
+
 </body>
 
 </html>

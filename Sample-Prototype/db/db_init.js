@@ -17,6 +17,7 @@ const create_ads_table_sql = `
         ad_rating INT NULL,
         read_time INT NULL,
         feedback VARCHAR(100) NULL,
+        userid VARCHAR(50) NULL,
         PRIMARY KEY (ad_id)
     );
 `
